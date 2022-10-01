@@ -1,0 +1,10 @@
+html 
+    head
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous")
+    body.d-flex.flex-column.text-center.align-items-center
+        h1.w-100.p-3.bg-primary.text-white.font-bold Chat
+        div#chat.w-50.h-75.p-5.bg-secondary.text-bottom.overflow-auto 
+        form(action="/chat" onsubmit="return false;")#form.w-50
+            input(type="text" placeholder="채팅을 입력하세요")#input.w-75.m-3.p-3
+            a#btn.p-3.btn.btn-primary 보내기
+    script(src="public/chat.js") 
